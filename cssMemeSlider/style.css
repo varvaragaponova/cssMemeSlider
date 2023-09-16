@@ -43,6 +43,7 @@ body {
 .img_block {
     width: 100%;
     flex-shrink: 0;
+    transition: all .4s;
 }
 
 .img {
@@ -107,3 +108,30 @@ body {
 .btns a:active {
     background-color: rgb(134, 1, 1);
 }
+
+#slide_one:target ~ .slider > .img_block {
+    /* transform: translateX(-100%); */
+    transition: all .4s;
+}
+
+#slide_two:target ~ .slider > .img_block {
+    transform: translateX(-100%);
+    transition: all .4s;
+}
+
+#slide_three:target ~ .slider > .img_block {
+    transform: translateX(-200%);
+    transition: all .4s;
+}
+
+#slide_four:target ~ .slider > .img_block {
+    transform: translateX(-300%);
+    transition: all .4s;
+}
+
+#slide_five:target ~ .slider > .img_block {
+    transform: translateX(-400%);
+    transition: all .4s;
+}
+
+
