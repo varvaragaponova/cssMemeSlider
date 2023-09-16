@@ -41,13 +41,13 @@ body {
 }
 
 .img_block {
-    width: 100%;
+    width: 101%;
     flex-shrink: 0;
     transition: all .4s;
 }
 
 .img {
-    width: 100%;
+    width: 99%;
     height: 100%;
     object-fit: contain;
 }
