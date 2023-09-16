@@ -58,9 +58,15 @@ body {
     justify-content: space-between;
 }
 
-.text_wrapper,
 .btns {
     display: flex;
+}
+
+.text_wrapper {
+    display: flex;
+    width: 80%;
+    flex-shrink: 0;
+    overflow: hidden;
 }
 
 .btns {
@@ -68,8 +74,13 @@ body {
 }
 
 .text {
-    font-size: 2em;
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+    font-size: 1.5em;
     color: #EAEAEA;
+    opacity: 0;
+    transition: all .4s;
 }
 
 .btns a {
@@ -134,4 +145,33 @@ body {
     transition: all .4s;
 }
 
+#slide_one:target ~ .wrapper_content .text:first-child {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all .4s;
+}
+
+#slide_two:target ~ .wrapper_content .text:nth-child(2) {
+    opacity: 1;
+    transform: translateX(-100%);
+    transition: all .4s;
+}
+
+#slide_three:target ~ .wrapper_content .text:nth-child(3) {
+    opacity: 1;
+    transform: translateX(-200%);
+    transition: all .4s;
+}
+
+#slide_four:target ~ .wrapper_content .text:nth-child(4) {
+    opacity: 1;
+    transform: translateX(-300%);
+    transition: all .4s;
+}
+
+#slide_five:target ~ .wrapper_content .text:nth-child(5) {
+    opacity: 1;
+    transform: translateX(-400%);
+    transition: all .4s;
+}
 
