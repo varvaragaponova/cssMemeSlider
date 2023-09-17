@@ -85,6 +85,10 @@ body {
     transition: all .4s;
 }
 
+.text.visible {
+    opacity: 1;
+}
+
 .btns a {
     display: inline-block;
     width: 1em;
@@ -177,5 +181,11 @@ body {
     transition: all .4s;
 }
 
+#slide_two:target ~ .wrapper_content .text:nth-child(1),
+#slide_three:target ~ .wrapper_content .text:nth-child(1),
+#slide_four:target ~ .wrapper_content .text:nth-child(1),
+#slide_five:target ~ .wrapper_content .text:nth-child(1) {
+    opacity: 0;
+}
 /* @media screen and (max-width: ) */
 
