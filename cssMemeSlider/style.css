@@ -97,7 +97,7 @@ body {
 } */
 
 .btns a {
-    padding: 0.2em;
+    padding: 0.1em;
 }
 
 .active_btn {
@@ -243,11 +243,21 @@ a:first-child .active_btn {
     }
 }
 
+@media screen and (max-width: 1370px) {
+    .btns {
+        gap: 0;
+    }
+}
+
 @media screen and (max-width: 1000px) {
-    .btns a {
+    .active_btn {
         width: 0.8em;
         height: 0.8em;
     }
+
+    /* .btns {
+        gap: 0.4em;
+    } */
 }
 
 @media screen and (max-width: 900px) {
