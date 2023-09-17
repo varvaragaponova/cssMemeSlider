@@ -86,7 +86,21 @@ body {
     opacity: 1;
 }
 
+/* .btns a {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    text-decoration: none;
+    color:#EAEAEA;
+    border: 0.1em solid #EAEAEA;
+    border-radius: 100%;
+} */
+
 .btns a {
+    padding: 0.2em;
+}
+
+.active_btn {
     display: inline-block;
     width: 1em;
     height: 1em;
@@ -115,12 +129,12 @@ body {
     width: 2rem;
 }
 
-.btns a:hover {
-    background-color: red;
+.btns a .active_btn:hover {
+    background-color: rgb(134, 1, 1);
 }
 
-.btns a:active {
-    background-color: rgb(134, 1, 1);
+.btns a .active_btn:active {
+    background-color: red;
 }
 
 #slide_one:target ~ .slider > .img_block {
@@ -185,22 +199,35 @@ body {
     opacity: 0;
 }
 
-.btns a:first-child {
+a:first-child .active_btn {
     background-color: rgb(134, 1, 1);
 }
 
-#slide_two:target ~ .wrapper_content .btns a:nth-child(2),
-#slide_three:target ~ .wrapper_content .btns a:nth-child(3),
-#slide_four:target ~ .wrapper_content .btns a:nth-child(4),
-#slide_five:target ~ .wrapper_content .btns a:nth-child(5) {
+#slide_two:target ~ .wrapper_content .btns a:nth-child(2) .active_btn,
+#slide_three:target ~ .wrapper_content .btns a:nth-child(3) .active_btn,
+#slide_four:target ~ .wrapper_content .btns a:nth-child(4) .active_btn,
+#slide_five:target ~ .wrapper_content .btns a:nth-child(5) .active_btn {
     background-color: rgb(134, 1, 1);
 }
 
-#slide_two:target ~ .wrapper_content .btns a:first-child,
-#slide_three:target ~ .wrapper_content .btns a:first-child,
-#slide_four:target ~ .wrapper_content .btns a:first-child,
-#slide_five:target ~ .wrapper_content .btns a:first-child {
+#slide_two:target ~ .wrapper_content .btns a:first-child .active_btn,
+#slide_three:target ~ .wrapper_content .btns a:first-child .active_btn,
+#slide_four:target ~ .wrapper_content .btns a:first-child .active_btn,
+#slide_five:target ~ .wrapper_content .btns a:first-child .active_btn {
     background-color: transparent;
+}
+
+#slide_two:target ~ .wrapper_content .btns a:first-child:hover .active_btn,
+#slide_three:target ~ .wrapper_content .btns a:first-child:hover .active_btn,
+#slide_four:target ~ .wrapper_content .btns a:first-child:hover .active_btn,
+#slide_five:target ~ .wrapper_content .btns a:first-child:hover .active_btn {
+    background-color: rgb(134, 1, 1);
+}
+#slide_two:target ~ .wrapper_content .btns a:first-child:active .active_btn,
+#slide_three:target ~ .wrapper_content .btns a:first-child:active .active_btn,
+#slide_four:target ~ .wrapper_content .btns a:first-child:active .active_btn,
+#slide_five:target ~ .wrapper_content .btns a:first-child:active .active_btn {
+    background-color: red;
 }
 
 @media screen and (max-width: 1140px) {
