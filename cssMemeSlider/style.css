@@ -20,7 +20,8 @@ body {
 .slider,
 .wrapper_content,
 .work_info {
-    width: 60vw;
+    /* width: 60vw; */
+    width: 28vw;
     margin: 0 auto;
 }
 
@@ -50,7 +51,7 @@ body {
 .img {
     width: 99%;
     height: 100%;
-    object-fit: contain;
+    aspect-ratio: 1/1;
 }
 
 .wrapper_content {
@@ -65,7 +66,7 @@ body {
 
 .text_wrapper {
     display: flex;
-    width: 80%;
+    width: 70%;
     flex-shrink: 0;
     overflow: hidden;
 }
@@ -175,4 +176,6 @@ body {
     transform: translateX(-400%);
     transition: all .4s;
 }
+
+/* @media screen and (max-width: ) */
 
